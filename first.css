@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana",sans-serif;
+    background-color:  #fefcfd;
+    
+}
+div.main {
+   position: relative;
+  left: 770px;
+   top:100px;
+  width: 100%;
+  max-height: 100%;
+  float: left;
+    height: 46px;
+    padding: 0 10px;
+  line-height: 1.6;
+}
+.note {
+  font-size: 95%;
+  width: 36px;
+  line-height: 1.6;
+
+ }
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#b3ffd7;
+}
+.rate:not(:checked) > label:before {
+      content: '🟊 ';
+}
+.rate > input:checked ~ label {
+    color: #00cc66;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #b3ffd7;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #00cc66;
+  
+}
+a {
+  color: black;
+}
+.size
+{
+  font-size: 45px;
+}
+.button {
+  border-style: solid black;
+  padding: 20px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #000000; color: black;
+color: white} 
+.button2 {background-color:  #ffffff;color: black
+} 
+.image_1{
+  padding: 90px;
+  }
+.image_12{
+    padding-left:90px;
+    
+}
+table {
+  display: block;
+  width: 100%;
+  height: 200px;  
+  position: relative;
+  top:400px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color:white;
+  color: black;
+}
+th {
+  height: 50px;
+   width: 3%;
+  padding: 15px;
+  text-align: center;
+  background-color:white;
+}
+td {
+  background-color:white;
+  
+}
